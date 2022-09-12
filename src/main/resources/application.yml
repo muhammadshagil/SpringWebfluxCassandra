@@ -1,0 +1,12 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: test
+      port: 9042
+      schema-action: create_if_not_exists
+      contact-points: 127.0.0.1
+      local-datacenter: datacenter1
+externalApi:
+  container:
+    service:
+      url: "http://localhost:8080"
